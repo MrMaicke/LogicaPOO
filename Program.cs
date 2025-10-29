@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-Console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
 // CamalCase = nomeVariavel
@@ -6,6 +6,8 @@ Console.WriteLine("Hello, World!");
 //snack_case = nome_variavel
 
 //tipoDeDado nomeVariavel = valorDaVariavel
+string nome = "Marcelo Santiago de Oliveira";
+
 int numeroInteiro = 1;
 
 double preco = 5.60D;
@@ -16,16 +18,14 @@ bool boleanos = true;
 
 char character = 'A';
 
-string nome = "Marcelo Santiago de Oliveira";
-
 Console.WriteLine(nome);
 
 /*----------------------------------------*/
 
-Console.WriteLine("Soma : " + (1 + 2));
-Console.WriteLine("Subtração : " + (1 - 2));
-Console.WriteLine("Divisão : " + (1 / 2));
-Console.WriteLine("Multiplicação : " + (1 * 2));
+Console.WriteLine("Soma :" + (1 + 2));
+Console.WriteLine("Subtração :" + (1 - 2));
+Console.WriteLine("Divisão :" + (1 / 2));
+Console.WriteLine("Multiplicação :" + (1 * 2));
 /*----------------------------------------*/
 
 
@@ -78,9 +78,9 @@ Console.WriteLine(2 == 4 || 3 == 3); // false || true (true)
 Console.WriteLine(2 == 4 || 3 == 9); // false || false (false)
 
 
-Console.WriteLine(!true == true);
+console.WriteLine(!true == true);
 
-Console.WriteLine(!(2 == 2 || 3 == 3));
+console.WriteLine(!(2 == 2 || 3 == 3));
 
 /*----------------------------------------*/
 
@@ -88,10 +88,10 @@ bool noite = true;
 
 //se naose
 if(noite){
-    Console.WriteLine("Agora é noite");
+    console.WriteLine("Agora é noite");
 }
 else{
-    Console.WriteLine("Agora é de dia");
+    console.WriteLine("Agora é de dia");
 }
 
 //if ternario
@@ -99,22 +99,18 @@ var condicao = (noite) ? "Agora é de noite!" : "Agora é de dia";
 
 var idade = 20;
 
-if (idade < 18)
-{
-    Console.WriteLine("Pessoa menor de idade");
+if (idade < 18 ){
+    console.WriteLine("Pessoa menor de idade");
 }
-else if (idade >= 18 && idade < 21)
-{
-    Console.WriteLine("Maior de idade mas não de maioridade penal");
+else if(idade >= 18 && idade < 21){
+    console.WriteLine("Maior de idade mas não de maioridade penal");
 }
 else
 {
-    Console.WriteLine("Maior de idade legal");
+    console.WriteLine("Maior de idade legal");
 }
 
-int diaSemana = 1;
-
-switch (diaSemana)
+switch(diaSemana)
 {
     case 1:
         Console.WriteLine("Domingo");
@@ -149,63 +145,18 @@ int numero = 1;
 
 while (numero < 10)
 {
-    Console.WriteLine(numero);
+    console.WriteLine(numero);
     numero = numero + 1; //numero++
 }
 
 int numero02 = 1;
 
 do{
-    Console.WriteLine(numero02);
-    numero02 = numero02 + 1; // numero++
+    console.WriteLine(numero02);
+    numer02 = numero02 + 1; // numero++
 }while (numero02 < 10);
 
 /*for(valor inicial; condição; processamento;)*/
-for (int valor = 0; valor < 10; valor++)
-{
-    Console.WriteLine(valor);
+for(int valor = 0; valor < 10; valor++){
+    console.WriteLine(valor);
 }
-
-/*----------------------------------------*/
-
-static string InformarNome(string nome)
-{
-    return (nome);
-}
-
-Console.WriteLine(InformarNome("Marcelo Santiago"));
-
-/* FUNÇÃO SEM RETORNO DE NADA */
-void somarValores(int numero01, int numero02)
-{
-    Console.WriteLine(numero01 + numero02);
-}
-somarValores(10, 20);
-
-/*----------------------------------------*/
-
-int[] arrayNumeros = new int[3];
-
-arrayNumeros[0] = 1;
-arrayNumeros[1] = 2;
-arrayNumeros[2] = 3;
-
-string[] nomes = { "Marcelo", "Ana", "Mari" };
-
-
-/*----------------------------------------*/
-
-int[,] matrizNumeros = new int[3, 3];
-
-matrizNumeros[0, 0] = 1;
-matrizNumeros[0, 1] = 2;
-matrizNumeros[0, 2] = 3;
-
-matrizNumeros[1, 0] = 4;
-matrizNumeros[1, 1] = 5;
-matrizNumeros[1, 2] = 6;
-
-matrizNumeros[2, 0] = 7;
-matrizNumeros[2, 1] = 8;
-matrizNumeros[2, 2] = 9;
-
